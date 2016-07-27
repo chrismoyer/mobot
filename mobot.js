@@ -151,7 +151,7 @@ board.on("ready", function() {
 	
 	// VIDEO CONTROL CODE
 	
-	var selectedMovie = 'kitty.mp4';
+	var selectedMovie = '../mobot-videos/kitty.mp4';
 	
 	var play_movie = function(movie) {
 		// Create an instance of the player with the source. 
@@ -163,11 +163,11 @@ board.on("ready", function() {
 	}
 	
 	controller.on('triangle:press', function(data) {
-		play_movie('rick.mp4');
+		play_movie('../mobot-videos/rick.mp4');
 	});
 	
 	controller.on('circle:press', function(data) {
-		play_movie('chimpnology.mp4');
+		play_movie('../mobot-videos/robots.mp4');
 	});
 	
 	controller.on('x:press', function(data) {
