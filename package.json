@@ -1,0 +1,17 @@
+{
+  "name": "mobot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "johnny-five": "^0.9.58",
+    "dualshock-controller": "0.6.9",
+    "keypress": "0.2.1",
+    "node-omxplayer": "0.4.0"
+  }
+}
