@@ -151,6 +151,18 @@ board.on("ready", function() {
 	
 	// VIDEO CONTROL CODE
 	
+	var tvMovies = ['../mobot-videos/tv/ghostbusters.mp4',
+					'../mobot-videos/tv/gijoe.mp4',
+					'../mobot-videos/tv/he-man.mp4',
+					'../mobot-videos/tv/inspectorgadget.mp4',
+					'../mobot-videos/tv/thundercats.mp4',
+					'../mobot-videos/tv/tmnt.mp4',
+					'../mobot-videos/tv/transformers.mp4',
+					'../mobot-videos/tv/voltron.mp4'];
+
+	var musicMovies = ['../mobot-videos/music/bassnectar.mp4',
+					   '../mobot-videos/music/robots.mp4']
+	
 	var selectedMovie = '../mobot-videos/kitty.mp4';
 	
 	var play_movie = function(movie) {
@@ -166,12 +178,20 @@ board.on("ready", function() {
 		play_movie('../mobot-videos/rick.mp4');
 	});
 	
+	var rand = function(max) {
+		return Math.floor(Math.random() * max);
+	}
+	
 	controller.on('circle:press', function(data) {
-		play_movie('../mobot-videos/robots.mp4');
+		movie = musicMovies[rand(musicMovies.length)];
+		console.log('Playing: ' + movie);	
+		play_movie(movie);
 	});
 	
 	controller.on('x:press', function(data) {
-		play_movie(selectedMovie);
+		movie = tvMovies[rand(tvMovies.length)];
+		console.log('Playing: ' + movie);	
+		play_movie(movie);
 	});	
 	
 	controller.on('square:press', function(data) {
