@@ -8,4 +8,4 @@ uses omxplayer on Pi, included with Raspian. Video files are assumed to be in ~/
 
 Default controls are video game style... R stick is speed and L stick is steering. L2 and R2 spin in place with speed reported by analog trigger. Holding L1 enables "tank style" controls where each stick controls the speed of each wheel independently. Holding R1 cuts all speeds in half when you're just feeling slow. 
 
-To make the DS4 work, after running `npm install` copy the file ds4.json into node_modules/dualshock-controller/controllerConfiurations. Thanks to 
+To make the DS4 work, after running `npm install` copy the file ds4.json into node_modules/dualshock-controller/controllerConfiurations. 
